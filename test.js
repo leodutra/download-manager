@@ -17,7 +17,7 @@ download.on('ready', () => {
     download.on('stop', () => console.log('Download was stopped'))
     download.on('finishing', () => console.log('Finishing event should not be fired.'))
     download.on('end', () => console.log('End event should not be fired.'))
-    setTimeout(() => download.stop(), 2000)
+    setTimeout(() => downloadManager.stop(download), 2000)
 })
 
 download = downloadManager.download(
