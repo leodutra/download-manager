@@ -1,4 +1,4 @@
-const _cliProgress = require('cli-progress')
+const cliProgress = require('cli-progress')
 const { once } = require('events')
 const fs = require('fs')
 const path = require('path')
@@ -6,12 +6,12 @@ const { DownloadWorker, utils } = require('rapid-downloader')
 
 class DownloadManager {
 
-    static progressBars = new _cliProgress.MultiBar({
+    static progressBars = new cliProgress.MultiBar({
         format: 'Downloading: {bar} {percentage}% | {filename} | ETA: {eta_formatted} | {value}/{total} kB | {speed} | {state}',
         stopOnComplete: true,
         clearOnComplete: false,
         hideCursor: true
-    }, _cliProgress.Presets.shades_grey)
+    }, cliProgress.Presets.shades_grey)
 
     downloads = []
 
