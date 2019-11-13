@@ -1,0 +1,31 @@
+{
+  "name": "download-manager",
+  "version": "1.0.0",
+  "description": "A simple CLI download manager with progress bars for Node.js apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leodutra/download-manager.git"
+  },
+  "keywords": [
+    "download",
+    "manager",
+    "fast",
+    "easy",
+    "node",
+    "rapid"
+  ],
+  "author": "Leo Dutra <leodutra.br@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leodutra/download-manager/issues"
+  },
+  "homepage": "https://github.com/leodutra/download-manager#readme",
+  "dependencies": {
+    "cli-progress": "^3.3.1",
+    "rapid-downloader": "git+ssh://git@github.com/minhnhut/rapid-downloader.git#b613c9b03219e23a7f1ce60abee5d6fae46d6137"
+  }
+}
